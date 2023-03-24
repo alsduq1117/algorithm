@@ -1,4 +1,4 @@
-package codeplus.algorithm_basic;
+package codeplus.algorithm_basic.begin;
 
 import java.util.Scanner;
 
