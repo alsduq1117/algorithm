@@ -23,7 +23,7 @@ public class p17298 {
 
         for(int i=0; i<t; i++){
             if(stack.empty()){
-
+                 
             }
         }
 
