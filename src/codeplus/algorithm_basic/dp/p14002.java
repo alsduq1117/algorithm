@@ -34,21 +34,21 @@ public class p14002 {
         int max = 0;
         int t = 0; //최대 수열을 가지고 있는 수의 인덱스 값
 
-        for(int i=1; i<=n; i++){
-            if(max < dp[i]){
+        for (int i = 1; i <= n; i++) {
+            if (max < dp[i]) {
                 max = dp[i];
                 t = i;
             }
         }
         Stack<Integer> stack = new Stack<>();
         stack.push(a[t]);
-        while(!(v[t] == 0)){
+        while (!(v[t] == 0)) {
             stack.push(a[v[t]]);
             t = v[t];
         }
 
-        while(!stack.empty()){
-            sb.append(stack.pop()+" ");
+        while (!stack.empty()) {
+            sb.append(stack.pop() + " ");
         }
 
         System.out.println(max);
