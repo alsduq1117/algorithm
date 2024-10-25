@@ -28,7 +28,16 @@ public class p1107 {
 
 
     }
+    public static void Solution(String s, int N){
+        int[] arr = new int[s.length()];
+        for(int i=0; i<s.length(); i++){
+            arr[i] = s.charAt(i)-'0';
+        }
+    }
 }
+
+
+
 
 
 //문제 : 리모컨
