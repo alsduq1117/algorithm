@@ -1,4 +1,4 @@
-package codingtest_java.arraylist;
+package codingtest_java.stack;
 
 import java.util.HashMap;
 import java.util.Map;
