@@ -7,9 +7,10 @@ public class Problem13 {
     public int solution(int[][] board, int[] moves) {
         Stack<Integer> stack = new Stack<>();
         int result = 0;
+
         for (int i = 0; i < moves.length; i++) {
             int position = moves[i] - 1;
-            int doll = 0;
+            int doll = 0;   //인형의 모양 1~100 까지 0으로 초기화
             for (int j = 0; j < board.length; j++) {
                 if (board[j][position] != 0) {   //해당 위치에 인형이 없을시 반복문 다시
                     doll = board[j][position];
