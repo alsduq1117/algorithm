@@ -14,23 +14,23 @@ dirs	answer
 "LULLLLLLU"	7
  */
 
-
-public class Problem07 {
-
-    public int solution(String dirs){
-        int x = 5, y = 5;
-        HashSet<String> answer = new HashSet<>();      //겹치는 좌표는 처리
-
-        for(int i = 0; i< dirs.length(); i++){
-            int[] offset = location.get(dirs.charAt(i));
-            int nx = x + offset[0];
-            int ny = y + offset[1];
-            if(!isValidMove(nx, ny))
-                continue;
-
-            answer.add();
-        }
-
-    }
-
-}
+//
+//public class Problem07 {
+//
+//    public int solution(String dirs){
+//        int x = 5, y = 5;
+//        HashSet<String> answer = new HashSet<>();      //겹치는 좌표는 처리
+//
+//        for(int i = 0; i< dirs.length(); i++){
+//            int[] offset = location.get(dirs.charAt(i));
+//            int nx = x + offset[0];
+//            int ny = y + offset[1];
+//            if(!isValidMove(nx, ny))
+//                continue;
+//
+//            answer.add();
+//        }
+//
+//    }
+//
+//}
