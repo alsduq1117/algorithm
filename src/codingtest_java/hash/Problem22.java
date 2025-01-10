@@ -27,11 +27,11 @@ public class Problem22 {
             String command = st.nextToken();
             String Id = st.nextToken();
             if(command.equals("Enter")){
-                resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Enter 의 경우 [닉네임]님이 들어왔습니다
+                resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Enter 의 경우 [닉네임]님이 들어왔습니다.
                 continue;
             }
             if(command.equals("Leave")){
-                resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Enter 의 경우 [닉네임]님이 들어왔습니다
+                resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Leave 의 경우 [닉네임]님이 나갔습니다.
                 continue;
             }
         }
