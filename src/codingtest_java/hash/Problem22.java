@@ -26,13 +26,9 @@ public class Problem22 {
             StringTokenizer st = new StringTokenizer(recordElement, " ");
             String command = st.nextToken();
             String Id = st.nextToken();
-            if(command.equals("Enter")){
+            if(command.equals("Enter") || command.equals("Leave")){
                 resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Enter 의 경우 [닉네임]님이 들어왔습니다.
-                continue;
-            }
-            if(command.equals("Leave")){
-                resultList.add(idNicknameMap.get(Id) + commandMap.get(command));  // Leave 의 경우 [닉네임]님이 나갔습니다.
-                continue;
+
             }
         }
 
